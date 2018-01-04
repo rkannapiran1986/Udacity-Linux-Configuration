@@ -57,16 +57,16 @@ grader ALL=(ALL) NOPASSWD:ALL
 ```
 
 7. Create an SSH key pair for grader using the ssh-keygen tool.
-Generate on your machine the keys (private and public) (/home/ubuntu/.ssh/linuxCourse):
+Generate on your machine the keys (private and public) (/home/ubuntu/.ssh/linuxCouurse):
 
 ```
 $ ssh-keygen
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/ubuntu/.ssh/id_rsa): /home/ubuntu/.ssh/linuxCourse
+Enter file in which to save the key (/home/ubuntu/.ssh/id_rsa): /home/ubuntu/.ssh/linuxCouurse
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
-Your identification has been saved in /home/ubuntu/.ssh/linuuxCourse.
-Your public key has been saved in /home/ubuntu/.ssh/linuuxCourse.pub.
+Your identification has been saved in /home/ubuntu/.ssh/linuxCouurse.
+Your public key has been saved in /home/ubuntu/.ssh/linuxCouurse.pub.
 
 ```
 8. Create the following directories:
@@ -74,9 +74,9 @@ Your public key has been saved in /home/ubuntu/.ssh/linuuxCourse.pub.
 
 $ su --login grader
 $ sudo mkdir .ssh
-$ sudo touch .ssh/authorized_keysd_keys
+$ sudo touch .ssh/authorized_keys
 $ exit
-$ cat .ssh/linuxCourse.pub (copy the ssh key)
+$ cat .ssh/linuxCouurse.pub (copy the ssh key)
 $ su --login grader
 $ sudo nano .ssh/authorized_keys (paste the key here)
 $ sudo chmod 700 .ssh
@@ -87,8 +87,7 @@ $ exit
 
 ### Prepare to deploy your project.
 
-9. Configure the local timezone to UTC.
-Configure the time zone using below command:
+9. Configure the time zone using below command:
 ```
 $ sudo dpkg-reconfigure tzdata
 ```

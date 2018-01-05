@@ -2,11 +2,11 @@
 
 
 ## Amazon LightSail instance
-Public IP: 54.157.51.89
+Public IP: 54.157.197.228
 
 SSH Port: 2200
 
-Complete URL: http://54.157.51.89/
+Complete URL: http://54.157.197.228/
 
 ### Steps of configuration
 
@@ -22,7 +22,7 @@ $ chmod 400 LightsailDefaultKey.pem
 Access the machine with ssh:
 
 ```
-$ ssh ubuntu@54.157.51.89 -p 22 -i LightsailDefaultKey.pem
+$ ssh ubuntu@54.157.197.228 -p 22 -i LightsailDefaultKey.pem
 ```
 
 
@@ -80,7 +80,7 @@ $ cat .ssh/linuxCouurse.pub (copy the ssh key)
 $ su --login grader
 $ sudo nano .ssh/authorized_keys (paste the key here)
 $ sudo chmod 700 .ssh
-$ sudo chmod 600 .ssh/authorized_keys
+$ sudo chmod 644 .ssh/authorized_keys
 $ exit
 ```
 
@@ -234,7 +234,7 @@ Remove port SSH TCP 22
 28. Now update Facebook & Google Auth services to allow access for you public IP.
 
 
-29. Your item catalog was ready on http://54.157.51.89/
+29. Your item catalog was ready on http://54.157.197.228/
 
 
 30. Use below command to check log if you are facing any errors.

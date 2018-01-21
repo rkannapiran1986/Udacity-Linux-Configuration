@@ -84,6 +84,7 @@ $ sudo chmod 644 .ssh/authorized_keys
 $ exit
 ```
 
+Note: "linuxCouurse"" - Private key needs to share with Udacity team. To download that key use winscp with your lightsail private key to connect as ubuntu user.
 
 ### Prepare to deploy your project.
 

@@ -31,7 +31,7 @@ $ ssh ubuntu@54.157.197.228 -p 22 -i LightsailDefaultKey.pem
 ```
 $ sudo apt-get update
 $ sudo apt-get upgrade
-$ sudo apt-get finger
+$ sudo apt-get install finger
 ```
 
 
